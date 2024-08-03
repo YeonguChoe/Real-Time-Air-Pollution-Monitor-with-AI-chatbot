@@ -4,46 +4,80 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class Pollutant {
-    private String type;
-    private double amount;
-    private LocalDateTime time;
 
-    public Pollutant(String type, double amount, LocalDateTime time) {
-        this.type = type;
-        this.amount = amount;
-        this.time = time;
+    private double carbonMonoxide;
+    private double nitrogenMonoxide;
+    private double ozone;
+    private double inhalableParticulateMatter;
+    private double fineParticulateMatter;
+    private double sulfurDioxide;
+
+    public Pollutant(double carbonMonoxide, double nitrogenMonoxide, double ozone, double inhalableParticulateMatter, double fineParticulateMatter, double sulfurDioxide) {
+        this.carbonMonoxide = carbonMonoxide;
+        this.nitrogenMonoxide = nitrogenMonoxide;
+        this.ozone = ozone;
+        this.inhalableParticulateMatter = inhalableParticulateMatter;
+        this.fineParticulateMatter = fineParticulateMatter;
+        this.sulfurDioxide = sulfurDioxide;
     }
 
-    public String getType() {
-        return type;
+    public double getCarbonMonoxide() {
+        return carbonMonoxide;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setCarbonMonoxide(double carbonMonoxide) {
+        this.carbonMonoxide = carbonMonoxide;
     }
 
-    public double getAmount() {
-        return amount;
+    public double getNitrogenMonoxide() {
+        return nitrogenMonoxide;
     }
 
-    public void setAmount(float amount) {
-        this.amount = amount;
+    public void setNitrogenMonoxide(double nitrogenMonoxide) {
+        this.nitrogenMonoxide = nitrogenMonoxide;
     }
 
-    public LocalDateTime getTime() {
-        return time;
+    public double getOzone() {
+        return ozone;
     }
 
-    public void setTime(LocalDateTime time) {
-        this.time = time;
+    public void setOzone(double ozone) {
+        this.ozone = ozone;
+    }
+
+    public double getInhalableParticulateMatter() {
+        return inhalableParticulateMatter;
+    }
+
+    public void setInhalableParticulateMatter(double inhalableParticulateMatter) {
+        this.inhalableParticulateMatter = inhalableParticulateMatter;
+    }
+
+    public double getFineParticulateMatter() {
+        return fineParticulateMatter;
+    }
+
+    public void setFineParticulateMatter(double fineParticulateMatter) {
+        this.fineParticulateMatter = fineParticulateMatter;
+    }
+
+    public double getSulfurDioxide() {
+        return sulfurDioxide;
+    }
+
+    public void setSulfurDioxide(double sulfurDioxide) {
+        this.sulfurDioxide = sulfurDioxide;
     }
 
     @Override
     public String toString() {
         return "Pollutant{" +
-                "type='" + type + '\'' +
-                ", amount=" + amount +
-                ", time=" + time +
+                "carbonMonoxide=" + carbonMonoxide +
+                ", nitrogenMonoxide=" + nitrogenMonoxide +
+                ", ozone=" + ozone +
+                ", inhalableParticulateMatter=" + inhalableParticulateMatter +
+                ", fineParticulateMatter=" + fineParticulateMatter +
+                ", sulfurDioxide=" + sulfurDioxide +
                 '}';
     }
 }
