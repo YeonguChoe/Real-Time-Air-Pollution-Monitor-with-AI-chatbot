@@ -1,6 +1,7 @@
 package ca.terrahacks.backend.pollutant;
 
 
+import io.github.cdimascio.dotenv.Dotenv;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.stereotype.Service;
@@ -19,7 +20,9 @@ public class PollutantService {
 
     public Map<String, Double> getData(double inputLatitude, double inputLongitude) {
         try {
-            URL url = new URL("https://airquality.googleapis.com/v1/currentConditions:lookup?key=AIzaSyDjer390N__VdME5RdCjsbBb85A97OCS4k");
+            Dotenv dotenv = Dotenv.load();
+            String API_KEY = dotenv.get("GOOGLE_API_KEY");
+            URL url = new URL("https://airquality.googleapis.com/v1/currentConditions:lookup?key=" + API_KEY);
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("POST");
             connection.setDoOutput(true);
