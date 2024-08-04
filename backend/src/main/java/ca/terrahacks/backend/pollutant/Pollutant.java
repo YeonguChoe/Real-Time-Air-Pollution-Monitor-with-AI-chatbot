@@ -1,20 +1,17 @@
 package ca.terrahacks.backend.pollutant;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-
 public class Pollutant {
 
     private double carbonMonoxide;
-    private double nitrogenMonoxide;
+    private double nitrogenDioxide;
     private double ozone;
     private double inhalableParticulateMatter;
     private double fineParticulateMatter;
     private double sulfurDioxide;
 
-    public Pollutant(double carbonMonoxide, double nitrogenMonoxide, double ozone, double inhalableParticulateMatter, double fineParticulateMatter, double sulfurDioxide) {
+    public Pollutant(double carbonMonoxide, double nitrogenDioxide, double ozone, double inhalableParticulateMatter, double fineParticulateMatter, double sulfurDioxide) {
         this.carbonMonoxide = carbonMonoxide;
-        this.nitrogenMonoxide = nitrogenMonoxide;
+        this.nitrogenDioxide = nitrogenDioxide;
         this.ozone = ozone;
         this.inhalableParticulateMatter = inhalableParticulateMatter;
         this.fineParticulateMatter = fineParticulateMatter;
@@ -29,12 +26,12 @@ public class Pollutant {
         this.carbonMonoxide = carbonMonoxide;
     }
 
-    public double getNitrogenMonoxide() {
-        return nitrogenMonoxide;
+    public double getNitrogenDioxide() {
+        return nitrogenDioxide;
     }
 
-    public void setNitrogenMonoxide(double nitrogenMonoxide) {
-        this.nitrogenMonoxide = nitrogenMonoxide;
+    public void setNitrogenDioxide(double nitrogenDioxide) {
+        this.nitrogenDioxide = nitrogenDioxide;
     }
 
     public double getOzone() {
@@ -73,7 +70,7 @@ public class Pollutant {
     public String toString() {
         return "Pollutant{" +
                 "carbonMonoxide=" + carbonMonoxide +
-                ", nitrogenMonoxide=" + nitrogenMonoxide +
+                ", nitrogenMonoxide=" + nitrogenDioxide +
                 ", ozone=" + ozone +
                 ", inhalableParticulateMatter=" + inhalableParticulateMatter +
                 ", fineParticulateMatter=" + fineParticulateMatter +

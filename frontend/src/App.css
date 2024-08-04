@@ -1,0 +1,38 @@
+/* 앱 전체에 여백을 추가하려면 */
+.App {
+    padding: 0 20px; /* 왼쪽과 오른쪽에 각각 20px의 여백을 추가합니다 */
+}
+
+/* 특정 요소에 여백을 추가하려면 */
+.App-container {
+    margin: 0 auto; /* 중앙 정렬을 위해 자동으로 좌우 여백을 설정 */
+    max-width: 1000px; /* 원하는 최대 너비를 설정 */
+    padding: 0 20px; /* 왼쪽과 오른쪽에 각각 20px의 여백을 추가합니다 */
+}
+
+/* 필요에 따라 여백을 추가할 수 있는 다른 클래스들 */
+.TextField-container {
+    padding: 0 10px; /* 왼쪽과 오른쪽에 각각 10px의 여백을 추가합니다 */
+}
+
+.Button-container {
+    padding: 0 10px; /* 왼쪽과 오른쪽에 각각 10px의 여백을 추가합니다 */
+}
+
+.title {
+    text-align: center;
+    margin: 20px 0; /* 상하 여백 추가 */
+    font-size: 2rem; /* 폰트 크기 조정 */
+    color: #333; /* 폰트 색상 조정 */
+}
+
+footer {
+    margin-top: 12px;
+    background-color: skyblue;
+    padding: 20px; /* Increase padding for a taller footer */
+    text-align: center;
+    height: 220px; /* Optional: Set a specific height */
+    display: flex; /* Use flexbox for vertical alignment */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}

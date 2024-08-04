@@ -49,7 +49,7 @@ public class AIService {
                           "content": "%s"
                         }
                       ],
-                      "max_tokens": 50
+                      "max_tokens": 300
                     }
                     """;
 
